@@ -1,0 +1,63 @@
+// Set height
+function setHeight(the_selector) {
+  var a_height = 0;
+  $(the_selector).css('height','auto');
+  $(the_selector).each(function() {    
+    if ($(this).outerHeight() > a_height) {
+      a_height = $(this).outerHeight();
+    }
+  });
+  $(the_selector).attr('style','height: '+a_height+'px;');
+}
+
+$(document).ready(function() {
+    $(window).resize(function(){
+        if ($('.width-detector').width() >= 1440) {
+            $('html, body').removeClass('menu-active');
+        }
+
+        // Same height containers
+        var same_height_counter = 0;
+        var same_height_class_new = '';
+        if ( $('.same-height-parent-js').length > 0 ) {
+            $('.same-height-parent-js').each( function() {
+                same_height_counter++;
+                if ( $(this).find('.same-height-item-js').length > 0 ) {
+                    $(this).find('.same-height-item-js').each( function() {
+                        same_height_class_new = 'same-height-item--'+same_height_counter;
+                        $(this).addClass(same_height_class_new);
+                    });
+                    setHeight('.'+same_height_class_new);
+                }
+            });
+        }
+
+        // Custom Layouts: 2-Column Hexagon Media
+        $('.column-media__hexagon').each(function() {
+            $(this).outerHeight($(this).outerWidth() * .8333)
+        })
+    }).resize();
+
+    $(window).scroll(function() {
+        // Header section sticky
+        if ($(window).scrollTop() > $('.header-anchor.js').offset().top) {
+            $('.header-outer, .template-content').addClass('fixed');
+        } else {
+            $('.header-outer, .template-content').removeClass('fixed');
+        }
+    }).scroll();
+
+    // Mobile menu
+    $('.header__menu-mobile-button').click(function() {
+        if ( $('.header__menu.active').length > 0 ) {
+            $('.header__menu-mobile-button a').attr('aria-expanded','false');
+            $('.header__menu').attr('aria-hidden','true');
+        }
+        else {
+            $('.header__menu-mobile-button a').attr('aria-expanded','true');
+            $('.header__menu').attr('aria-hidden','false');
+        }
+        $('.header__menu').toggleClass('active');
+        $('html, body').toggleClass('menu-active');
+    });
+});
