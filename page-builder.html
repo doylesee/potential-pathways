@@ -1,0 +1,191 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+
+  <link rel="shortcut icon" type="image/x-icon" href="images/potential-path__icon.png">
+
+  <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+  <link rel="stylesheet" href="styles/styles.css">
+
+  <!--Quill-->
+  <link href="styles/quill.snow.css" rel="stylesheet" />
+  <script src="scripts/quill.js"></script>
+
+  <!--Seems-->
+  <link href="styles/seems.min.css" rel="stylesheet" />
+  <script src="scripts/seems.min.js"></script>
+
+  <title>Potential Pathway</title>
+  <meta name="robots" content="noindex, nofollow">
+</head>
+
+<body id="careers-home" class="scroll">
+  <div class="width-detector"></div>
+
+  <div class="page-container fadeIn">
+
+    <a class="skip-main background-1 color-white hide-for-print" href="#main">Skip to main content</a>
+
+    <div class="top-wrapper relative-container">
+      <div class="header-anchor js"></div>
+      <div class="header-outer">
+        <header>
+          <div class="row row--full-width">
+            <div class="row row--full-width">
+              <div class="small-10 large-4 xlarge-3 columns header__logo">
+                <a href="#"><img
+                    src="images/potential-path__logo.png"
+                    alt="" /></a>
+              </div>
+              <div class="hide-for-print small-2 large-8 columns header__menu-mobile text-right hide-for-xlarge">
+                <span class="header__menu-mobile-button">
+                  <a href="javascript:void(0);" aria-expanded="false" class="color-1"><i class="fa fa-bars"
+                      aria-hidden="true"></i><span class="show-for-sr">Menu</span></a>
+                </span>
+              </div>
+              <div class="hide-for-print hide-for-xlarge columns header__menu large-text-right---" aria-hidden="true">
+                <nav class="header__menu-inner">
+                  <ul class="clearfix">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#" target="_blank">Contact Us</a></li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="hide-for-print show-for-xlarge xlarge-9 columns header__menu--large large-text-right"
+                aria-hidden="true">
+                <nav class="header__menu-inner">
+                  <ul class="clearfix">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#" target="_blank">Contact Us</a></li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </header><!--close header-->
+      </div><!--close .header-outer-->
+    </div><!--close .top-wrapper-->
+
+    <div id="main" tabindex="-1"></div>
+    
+    <div class="template-content">
+      <!-- SEEMS v1.0 -->
+      <!-- Developed by Doyle See / doylesee.com -->
+
+      <div class="seems-page">
+      </div>
+
+      <div id="seems">
+          <!--Add Section START-->
+          <section class="add-section-js seems-modal seems-modal--level-1 active">
+              <select class="select-layout-js">
+                  <option value="">Select Layout</option>
+                  <!--modify these with the same values from the JS-->
+                  <option value="value set from [layouts] variable">Layout Name</option>
+                  <option value="layout-content-with-background">Content with Background</option>
+                  <option value="layout-3-column-cta">3-Column Call-to-Actions</option>
+              </select>
+              <button class="seems-button seems-manage-button" data-action="add-section">Add Section</button>
+              <br /><br />
+
+              <textarea class="page-html-js"></textarea>
+              <button class="seems-button seems-manage-button" data-action="copy-to-clipboard">Copy to Clipboard</button>
+              <button class="seems-button seems-manage-button" data-action="render-code">Render Code</button>
+          </section>
+          <!--Add Section END-->
+
+          <!-- ***** -->
+
+          <!--Add Section Content START-->
+          <section class="add-section-content-js seems-modal seems-modal--level-2">
+              <button class="seems-manage-button" data-action="back">Back</button>
+              <h2>Add Section</h2>
+
+              <input type="text" class="seems-url-input hide" placeholder="Input URL Link" />
+              <input type="text" class="seems-image-input hide" placeholder="Input image's relative URL" />
+              <input type="text" class="seems-image-input-alt hide" placeholder="Input image's ALT value" />
+
+              <!--Quill elements START-->
+              <div class="quill-editor-outer">
+                  <div id="seems-section-editor"></div>
+              </div>
+
+              <!-- <button class="seems-button seems-manage-button seems-item-input hide" data-action="add-item" style="width: 100%;">Add Item</button> -->
+              <input type="number" step="1" min="1" class="seems-item-input hide" placeholder="Input number of items to add" />
+
+              <div style="text-align: right;"><button class="seems-button seems-manage-button" data-action="save">Save</button></div>
+              <!--Quill elements END-->
+          </section>
+          <!--Add Section Content END-->
+      </div>
+
+      <script>
+      // Initialize Quill with the ID of your editor div.
+      const sharedModules = {
+          toolbar: [
+              // Headers: H1, H2, H3, H4, and normal text (false)
+              [{ 'header': [1, 2, 3, 4, false] }],
+
+              // Lists: Ordered and Unordered
+              [{ 'list': 'ordered' }, { 'list': 'bullet' }],
+
+              // Text Alignment
+              [{ 'align': [] }],
+
+              // Inline Text Formatting
+              ['bold', 'italic', 'underline', 'link']
+          ],
+      };
+
+      var sectionQuill = new Quill('#seems-section-editor', {
+          modules: sharedModules,
+          theme: 'snow',
+          placeholder: 'Start typing content for the section...'
+      });
+      </script>
+    </div><!--close .template-content-->
+
+    <footer>
+      <div class="padded-v-large background-dark">
+        <div class="row row--full-width">
+          <div class="padded-h-large">
+            <div class="row row--full-width">
+              <div class="columns large-6">
+                &copy; 2026 | Potential Pathway
+              </div>
+              <div class="columns large-6 small-text-left large-text-right footer__social-media">
+                <div class="space-small hide-for-large"></div>
+                <a href="#" target="_blank"><i class="fa fa-youtube-play"><span
+                      class="show-for-sr">youtube</span></i></a>
+                <a href="#" target="_blank"><i
+                    class="fa fa-linkedin"><span class="show-for-sr">linkedin</span></i></a>
+                <a href="#" target="_blank"><i
+                    class="fa fa-instagram"><span class="show-for-sr">linkedin</span></i></a>
+                <a href="#" target="_blank"><i class="fa fa-facebook"><span
+                      class="show-for-sr">facebook</span></i></a>
+                <a href="#" target="_blank"><i class="fa fa-twitter"><span
+                      class="show-for-sr">twitter</span></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer><!--close footer-->
+
+  </div><!--close .page-container-->
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js"></script>
+  <script src="scripts/scripts.js"></script>
+</body>
+
+</html>
