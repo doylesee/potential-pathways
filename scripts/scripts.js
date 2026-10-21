@@ -31,21 +31,7 @@ $(document).ready(function() {
                 }
             });
         }
-
-        // Custom Layouts: 2-Column Hexagon Media
-        $('.column-media__hexagon').each(function() {
-            $(this).outerHeight($(this).outerWidth() * .8333)
-        })
     }).resize();
-
-    $(window).scroll(function() {
-        // Header section sticky
-        if ($(window).scrollTop() > $('.header-anchor.js').offset().top) {
-            $('.header-outer, .template-content').addClass('fixed');
-        } else {
-            $('.header-outer, .template-content').removeClass('fixed');
-        }
-    }).scroll();
 
     // Mobile menu
     $('.header__menu-mobile-button').click(function() {
