@@ -12,6 +12,20 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
   <link rel="stylesheet" href="styles/styles.css">
 
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js"></script>
+  <script src="scripts/scripts.js"></script>
+
+  <!--Quill-->
+  <link href="styles/quill.snow.css" rel="stylesheet" />
+  <script src="scripts/quill.js"></script>
+
+  <!--SEEMS-->
+  <link href="styles/seems.min.css" rel="stylesheet" />
+  <script src="scripts/seems.js"></script>
+
+  <script src="scripts/layouts.js"></script>
+
   <title>Potential Paths</title>
   <meta name="robots" content="noindex, nofollow">
 </head>
@@ -25,7 +39,7 @@
 
     <div class="top-wrapper relative-container">
       <div class="header-anchor js"></div>
-      <div class="header-outer">
+      <div class="header-outer padded-h-medium padded-v-small">
         <header>
           <div class="row row--full-width">
             <div class="row row--full-width">
@@ -70,176 +84,45 @@
     <div id="main" tabindex="-1"></div>
     <div class="template-content">
       <section class="banner-section-outer">
-        <div class="banner-section banner-section--top relative-container layer-1"
+        <div class="banner-section"
           style="background-image: url('https://images.unsplash.com/photo-1603478804503-dc909c7f5ce5?q=80&w=4042&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D');">
         </div>
-        <div class="banner-section__heading rounded-corners padded-v-small padded-h-medium">
-          <h1 class="show-for-sr">Skate ipsum dolor sit amet</h1>
-          <h2 class="heading-1 space-none">Locals wax skater</h2>
+        <div class="banner-section__heading">
+          <h1>Locals wax skater</h1>
         </div>
       </section>
 
-      <section class="padded-v-xlarge careers-home layout-3-column-content">
+      <section>
         <div class="space-small"></div>
         <div class="row">
           <div class="column">
-            <div class="padded-h-medium">
-              <p>Ledge bigspin smith grind Primo slide judo air wall ride. H-Street rad ollie hole gnar bucket berm rail coper. Frigid air heel flip vert spine crooked grind wheels Steve Robert. Poseur crailtap cess slide slide John Carbis mini ramp air. Tailslide ollie north helipop nose grab birdie lip. Wax concave backside Greg Evans Saran Wrap pressure flip hurricane. Snake invert finger flip vert acid drop frontside air. Tailslide 900 hurricane nosegrind rails nose slide Skull and Sword. Crailtap baseplate skate key cess slide freestyle slam. Nosepicker street no comply Tracker rock and roll 270. Frontside air fakie Rodney Mullen fakie out hip kickturn Primo slide. Late rocket air half-flip pool mongo hand rail. Snake Japan air death box nollie impossible backside.</p>
-            </div>
+            <p>Ledge bigspin smith grind Primo slide judo air wall ride. H-Street rad ollie hole gnar bucket berm rail coper. Frigid air heel flip vert spine crooked grind wheels Steve Robert. Poseur crailtap cess slide slide John Carbis mini ramp air. Tailslide ollie north helipop nose grab birdie lip. Wax concave backside Greg Evans Saran Wrap pressure flip hurricane. Snake invert finger flip vert acid drop frontside air. Tailslide 900 hurricane nosegrind rails nose slide Skull and Sword. Crailtap baseplate skate key cess slide freestyle slam. Nosepicker street no comply Tracker rock and roll 270. Frontside air fakie Rodney Mullen fakie out hip kickturn Primo slide. Late rocket air half-flip pool mongo hand rail. Snake Japan air death box nollie impossible backside.</p>
           </div>
         </div>
-        <div class="row same-height-parent-js">
-          <div class="columns large-4 end">
-            <div class="padded-h-medium space-small same-height-item-js same-height-item--1">
-              <div class="item">
-                <h2>Hard flip</h2>
-                <p>Bluntslide pressure flip regular footed. Bullet 66 wall ride alley oop bearings dude. Finger flip full-cab dude fakie out. 1080 kidney death box.</p>
-              </div>
-            </div>
+      </section>
+
+      <section>
+        <div class="row row--wide">
+          <div class="columns large-5 large-push-7">
+            <img src="https://images.unsplash.com/photo-1761839258605-d1b118266ccc?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt="" />
           </div>
-          <div class="columns large-4 end">
-            <div class="padded-h-medium space-small same-height-item-js same-height-item--1">
-              <div class="item">
-                <h2>Sketchy</h2>
-                <p>Grab crooked grind fastplant Omar Hassan. Skate key hard flip slide Town & Country egg plant. Speed wobbles hand rail Steve Chumney.</p>
-              </div>
-            </div>
-          </div>
-          <div class="columns large-4 end">
-            <div class="padded-h-medium space-small same-height-item-js same-height-item--1">
-              <div class="item">
-                <h2>Wobbles</h2>
-                <p>Rad crailtap hanger. Rail carve Tommy Guerrero bail baseplate. Hang-up Japan air wall ride launch ramp Ray Underhill. Transition nose blunt ho-ho air.</p>
-              </div>
+          <div class="columns large-7 large-pull-5">
+            <div class="column-copy__box padded-h-xlarge padded-v-large">
+              <h2>Rip grip rocket air</h2>
+              <p>Durometer axle stoked tail blunt. Gap pump fakie out rail slide 540 drop in Thrasher carve. Skate key gnarly slap maxwell slappy kickturn poseur hard flip.</p>
+              <p>Skate key backside camel back sick fakie out Colin McKay disaster nosegrind. Skater launch ramp Spanky rad ho-ho lip spine sick. Gnarly 720 nose blunt 540 sponsored pool Dogtown casper. Deck rails Thunder lip mini ramp rip grip boneless death box.</p>
             </div>
           </div>
         </div>
       </section>
 
-      <!--capture layout name-->
-      <!--include corresponding content block for the layout-->
-      <section id="careers-home-section-1"
-        class="page-section padded-v-xlarge careers-home-section-1 layout-2-column-hexagon-media-right background-gray">
+      <section>
         <div class="row row--wide">
           <div class="column">
-            <div class="column-copy column-copy--left">
-              <div class="column-copy__box padded-h-xlarge padded-v-large">
-                <h2>Rip grip rocket air</h2>
-                <p>Durometer axle stoked tail blunt. Gap pump fakie out rail slide 540 drop in Thrasher carve. Skate key gnarly slap maxwell slappy kickturn poseur hard flip.</p>
-                <p>Skate key backside camel back sick fakie out Colin McKay disaster nosegrind. Skater launch ramp Spanky rad ho-ho lip spine sick. Gnarly 720 nose blunt 540 sponsored pool Dogtown casper. Deck rails Thunder lip mini ramp rip grip boneless death box.</p>
-              </div>
+            <div class="columns large-5">
+              <img src="https://plus.unsplash.com/premium_photo-1726869970310-be802d863df0?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt="" />
             </div>
-            <div class="column-media column-media--right">
-              <div class="column-media__hexagon background-dark"
-                style="background-image: url('https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D');">
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!--capture layout name-->
-      <!--include corresponding content block for the layout-->
-      <section id="careers-home-section-2"
-        class="page-section padded-v-xlarge layout-category-tiles careers-home-section-2">
-        <div class="space-small"></div>
-        <div class="row row--narrow">
-          <div class="column">
-          </div>
-        </div>
-        <div class="row row--narrow same-height-parent-js">
-          <div class="columns medium-6 large-4 end category-item-outer space-small">
-            <a href="#"
-              class="category-item">
-              <div class="category-item__image same-height-item-js rounded-corners space-small same-height-item--2">
-                <img
-                  src="https://images.unsplash.com/photo-1573538447152-e6fe80357e8f?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
-                  alt="">
-              </div>
-              <div class="category-item__copy text-center">
-                <h2 class="heading-3 space-none">Indy Grab</h2>
-              </div>
-            </a>
-          </div>
-          <div class="columns medium-6 large-4 end category-item-outer space-small">
-            <a href="#" class="category-item">
-              <div class="category-item__image same-height-item-js rounded-corners space-small same-height-item--2">
-                <img
-                  src="https://images.unsplash.com/photo-1706720092267-9f45ba93e66c?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
-                  alt="">
-              </div>
-              <div class="category-item__copy text-center">
-                <h2 class="heading-3 space-none">Front Foot</h2>
-              </div>
-            </a>
-          </div>
-          <div class="columns medium-6 large-4 end category-item-outer space-small">
-            <a href="#" class="category-item">
-              <div class="category-item__image same-height-item-js rounded-corners space-small same-height-item--2">
-                <img
-                  src="https://images.unsplash.com/photo-1784564627086-7a847ede32c8?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
-                  alt="">
-              </div>
-              <div class="category-item__copy text-center">
-                <h2 class="heading-3 space-none">Impossible</h2>
-              </div>
-            </a>
-          </div>
-          <div class="columns medium-6 large-4 end category-item-outer space-small">
-            <a href="/search/career-development/jobs" class="category-item">
-              <div class="category-item__image same-height-item-js rounded-corners space-small same-height-item--2">
-                <img
-                  src="https://images.unsplash.com/photo-1710497626368-efe58c4f1dc4?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
-                  alt="">
-              </div>
-              <div class="category-item__copy text-center">
-                <h2 class="heading-3 space-none">Wall Ride</h2>
-              </div>
-            </a>
-          </div>
-          <div class="columns medium-6 large-4 end category-item-outer space-small">
-            <a href="#"
-              class="category-item">
-              <div class="category-item__image same-height-item-js rounded-corners space-small same-height-item--2">
-                <img
-                  src="https://images.unsplash.com/photo-1635197425857-2850b3dfc633?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
-                  alt="">
-              </div>
-              <div class="category-item__copy text-center">
-                <h2 class="heading-3 space-none">Tailslide</h2>
-              </div>
-            </a>
-          </div>
-          <div class="columns medium-6 large-4 end category-item-outer space-small">
-            <a href="#"
-              class="category-item">
-              <div class="category-item__image same-height-item-js rounded-corners space-small same-height-item--2">
-                <img
-                  src="https://images.unsplash.com/photo-1635197783412-7dd97a0cfb3b?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
-                  alt="">
-              </div>
-              <div class="category-item__copy text-center">
-                <h2 class="heading-3 space-none">Heel Flip</h2>
-              </div>
-            </a>
-          </div>
-        </div>
-      </section>
-
-      <!--capture layout name-->
-      <!--include corresponding content block for the layout-->
-      <section id="careers-home-section-3"
-        class="page-section padded-v-xlarge layout-2-column-hexagon-media-left background-gray careers-home-section-3">
-        <div class="row row--wide">
-          <div class="column">
-            <div class="column-media column-media--left">
-              <div class="column-media__hexagon background-dark"
-                style="background-image: url('https://plus.unsplash.com/premium_photo-1726869970310-be802d863df0?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D');">
-                <div class="column-media__hexagon-copy column-media__hexagon-copy--large text-center hide">Become An
-                  Interim Floater</div>
-              </div>
-            </div>
-            <div class="column-copy column-copy--right">
+            <div class="columns large-7">
               <div class="column-copy__box padded-h-xlarge padded-v-large">
                 <h2>Andy Takakjian grab</h2>
                 <p>Powerslide rip grip gap concave. Invert Christ air flail mongo birdie varial. Risers hang ten bone air tic-tac shoveit Gullwing quarter pipe. Kevin Harris tail vert nosebone nose grab griptape.</p>
@@ -250,45 +133,129 @@
         </div>
       </section>
 
-      <!--capture layout name-->
-      <!--include corresponding content block for the layout-->
-      <section id="careers-home-section-4"
-        class="page-section padded-v-xlarge layout-3-column-call-to-action careers-home-section-4">
+      <section>
         <div class="space-small"></div>
         <div class="row row--wide same-height-parent-js">
-          <div class="columns large-4 end">
-            <div class="column-call-to-action space-small text-center">
+          <div class="columns large-4 end column-call-to-action">
+            <div class="space-small text-center">
               <div class="item-outer">
-                <div class="item background-gray same-height-item-js same-height-item--3">
+                <div class="item background-gray same-height-item-js">
                   <h2> Nose blunt</h2>
                   <p>Face plant Vision gap hanger bank. Nose bump birdie Operation Ivy nosepicker slappy speed wobbles. Kidney nosegrind gnarly rip grip slob air. Flypaper griptape sponsored 50-50 Skate Rock late. Tuna-flip drop in nollie kidney dude. Wax pool ledge bruised heel drop in.</p>
                 </div>
                 <p class="item-link"><a href="#">LEARN MORE</a></p>
               </div>
             </div>
-          </div>
-          <div class="columns large-4 end">
-            <div class="column-call-to-action space-small text-center">
+          </div><!--close . column-call-to-action-->
+          <div class="columns large-4 end column-call-to-action">
+            <div class="space-small text-center">
               <div class="item-outer">
-                <div class="item background-gray same-height-item-js same-height-item--3">
+                <div class="item background-gray same-height-item-js">
                   <h2>Baseplate pivot</h2>
                   <p>Rob Roskopp pop shove-it pool crail slide. No comply flypaper cab flip steps shinner. Impossible slide cess slide frigid air berm. Rad frontside Mike Carroll bearings spine finger flip. Kevin Harris axle set front foot impossible dude 540.</p>
                 </div>
                 <p class="item-link"><a href="#">LEARN MORE</a></p>
               </div>
             </div>
-          </div>
-          <div class="columns large-4 end">
-            <div class="column-call-to-action space-small text-center">
+          </div><!--close . column-call-to-action-->
+          <div class="columns large-4 end column-call-to-action">
+            <div class="space-small text-center">
               <div class="item-outer">
-                <div class="item background-gray same-height-item-js same-height-item--3">
+                <div class="item background-gray same-height-item-js">
                   <h2>Full pipe hang ten</h2>
                   <p>Pop shove-it Transworld air. Casper frontside sketchy slide. Spike Jonze indy grab disaster kickflip 270. Rock and roll Slimeballs camel back shinner front foot impossible.</p>
                 </div>
                 <p class="item-link"><a href="#">LEARN MORE</a></p>
               </div>
             </div>
+          </div><!--close . column-call-to-action-->
+        </div>
+      </section>
+
+      <section class="layout-category-tiles">
+        <div class="space-small"></div>
+        <div class="row row--narrow">
+          <div class="column">
+            <p>Skate ipsum dolor sit amet, Japan air casper slide slide ledge. Kidney Chris Buchinsky yeah rail hardware. Flypaper sick 50-50 quarter pipe. Stoked Japan air transfer speed wobbles. Kevin Harris air Bonite rock and roll sponsored. Fakie out bruised heel ollie north sick Hugh Bod Boyle. Rip grip 360 g-turn hurricane. Death box Christ air freestyle darkslide. Hanger boned out Elissa Steamer tailslide mini ramp.</p>
           </div>
+        </div>
+
+        <div class="row row--narrow same-height-parent-js">
+          <div class="columns medium-6 large-4 end category-item-outer space-small">
+            <a href="#"
+              class="category-item">
+              <div class="category-item__image same-height-item-js">
+                <img
+                  src="https://images.unsplash.com/photo-1573538447152-e6fe80357e8f?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
+                  alt="">
+              </div>
+              <div class="category-item__copy text-center">
+                <h2 class="heading-3 space-none">Indy Grab</h2>
+              </div>
+            </a>
+          </div><!--close .category-item-outer-->
+          <div class="columns medium-6 large-4 end category-item-outer space-small">
+            <a href="#" class="category-item">
+              <div class="category-item__image same-height-item-js">
+                <img
+                  src="https://images.unsplash.com/photo-1706720092267-9f45ba93e66c?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
+                  alt="">
+              </div>
+              <div class="category-item__copy text-center">
+                <h2 class="heading-3 space-none">Front Foot</h2>
+              </div>
+            </a>
+          </div><!--close .category-item-outer-->
+          <div class="columns medium-6 large-4 end category-item-outer space-small">
+            <a href="#" class="category-item">
+              <div class="category-item__image same-height-item-js">
+                <img
+                  src="https://images.unsplash.com/photo-1784564627086-7a847ede32c8?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
+                  alt="">
+              </div>
+              <div class="category-item__copy text-center">
+                <h2 class="heading-3 space-none">Impossible</h2>
+              </div>
+            </a>
+          </div><!--close .category-item-outer-->
+          <div class="columns medium-6 large-4 end category-item-outer space-small">
+            <a href="/search/career-development/jobs" class="category-item">
+              <div class="category-item__image same-height-item-js">
+                <img
+                  src="https://images.unsplash.com/photo-1710497626368-efe58c4f1dc4?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
+                  alt="">
+              </div>
+              <div class="category-item__copy text-center">
+                <h2 class="heading-3 space-none">Wall Ride</h2>
+              </div>
+            </a>
+          </div><!--close .category-item-outer-->
+          <div class="columns medium-6 large-4 end category-item-outer space-small">
+            <a href="#"
+              class="category-item">
+              <div class="category-item__image same-height-item-js">
+                <img
+                  src="https://images.unsplash.com/photo-1635197425857-2850b3dfc633?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
+                  alt="">
+              </div>
+              <div class="category-item__copy text-center">
+                <h2 class="heading-3 space-none">Tailslide</h2>
+              </div>
+            </a>
+          </div><!--close .category-item-outer-->
+          <div class="columns medium-6 large-4 end category-item-outer space-small">
+            <a href="#"
+              class="category-item">
+              <div class="category-item__image same-height-item-js">
+                <img
+                  src="https://images.unsplash.com/photo-1635197783412-7dd97a0cfb3b?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
+                  alt="">
+              </div>
+              <div class="category-item__copy text-center">
+                <h2 class="heading-3 space-none">Heel Flip</h2>
+              </div>
+            </a>
+          </div><!--close .category-item-outer-->
         </div>
       </section>
 
@@ -322,10 +289,6 @@
     </footer><!--close footer-->
 
   </div><!--close .page-container-->
-
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js"></script>
-  <script src="scripts/scripts.js"></script>
 </body>
 
 </html>
